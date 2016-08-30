@@ -21,7 +21,7 @@ $(document).ready(function(){
 				$('.description').html(res.weather[0].description);
 				$('.tempMax').html('Temp Max: ' + res.main.temp_max + '&deg');
 				$('.tempMin').html('Temp Min: ' + res.main.temp_min + '&deg');
-				$('.weatherIcon').attr('src', 'http://openweathermap.org/img/w/' + res.weather[0].icon + '.png');
+				$('.weatherIcon').attr('src', 'icons/' + res.weather[0].icon + '.png');
 				console.log(res.weather[0].icon);
 				var temp1 = new Date(res.sys.sunrise * 1000);
 				var sunRise = temp1.toLocaleTimeString();

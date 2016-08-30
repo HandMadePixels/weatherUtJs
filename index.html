@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title>weather app</title>
-	<link rel="stylesheet" type="text/css" href="wather.css">
+	<link rel="stylesheet" type="text/css" href="weather.css">
 </head>
 <body>
-	<h1>weather app</h1>
-	<h4>by alvaro gomez</h4>
-	<button class="current">Get current city</button>
-	<br />
-	<form class="lookCity">
-		<label>Look for city
-			<input type="text" class="cityName" placeholder="Salt Lace City"/>
-		</label>
-		<input class="lookFor" type="submit" value="go" />
-	</form>
-	<img src="" alt="" />
-	<h2 class="city">name of the city</h2>
-	<h4 class="description">what</h4>
-	<img class="weatherIcon" src="http://openweathermap.org/img/w/10d.png">
-	<h1 class="temperature">72&deg;</h1>
-	<h4 class="tempMax"></h4>
-	<h4 class="tempMin"></h4>
-	<h4 class="sunrise">Sunrise: </h4>
-	<h4 class="sunset">Sunset: </h4>
-	<select name="" id="">
-		<option value="metric">C&deg;</option>
-		<option selected value="imperial">F&deg;</option>
-	</select>
+	<div class="wrapper">
+		<h2 class="city">name of the city</h2>
+		<h1 class="temperature">72&deg;</h1>
+		<h4 class="description">what</h4>
+		<img class="weatherIcon" src="http://openweathermap.org/img/w/10d.png">
+		<div class="pan">
+			<div class="info temp">
+				<h4 class="tempMax"></h4>
+				<h4 class="tempMin"></h4>
+			</div>
+			<div class="info suntime">
+				<h4 class="sunrise">Sunrise: </h4>
+				<h4 class="sunset">Sunset: </h4>
+			</div>
+		</div>
+		<form class="lookCity">
+			<label>
+				<input type="text" class="cityName" placeholder="Salt Lace City"/>
+			</label>
+			<input class="lookFor" type="submit" value="go" />
+		</form>
+		<div class="style-select semi-square">
+			<select>
+				<option value="metric">C&deg;</option>
+				<option selected value="imperial">F&deg;</option>
+			</select>
+		</div>
+	</div>
 	
 	<!-- JAVASCRIPT -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
