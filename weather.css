@@ -5,7 +5,7 @@
 }
 
 html, body{
-	background-color: #3E4850;
+	background-color: #2EA3A1;
 	padding:0;
 	margin: 0;
 	font-family: 'Josefin Sans';
@@ -13,7 +13,7 @@ html, body{
 }
 
 .wrapper{
-	width:100%;
+	width:66%;
 	max-width: 736px;
 	margin:2em auto;
 }
@@ -42,20 +42,23 @@ html, body{
 }
 
 .pan{
-	width: 100%;
-	height: auto
-	margin:0;
+	width: 64%;
+	height: auto;
+	margin:0 19%;
 	display: inline-flex;
 }
 
 .info{
-	/*display: inline-block;*/
 	padding:15px;
 	width: 50%;
 }
 
 .info h4{
 	font-size: 16px;
+}
+
+.tempM{
+	text-align: right;
 }
 
 .temp{
@@ -108,7 +111,67 @@ html, body{
 	width: 120px;
 }
 
+@media(max-width: 768px) and (min-width: 320px) and (orientation: portrait){
+	.city{
+		font-size:26px;
+	}
 
+	.temperature{
+		font-size: 75px;
+	}
+
+	.description{
+		font-size: 20px;
+	}
+
+	.wrapper{
+		width:90%;
+	}
+
+	.pan{
+		width:100%;
+		margin:0;
+	}
+
+	.info{
+		padding:4px;
+	}
+
+	.lookCity{
+		width:65%;
+	}
+
+	.cityName{
+		width: 65%;
+	}
+}
+
+@media (max-width: 768px) and (min-width: 320px) and (orientation:landscape){
+	.city{
+		font-size: 36px;
+	}
+
+	.temperature{
+		font-size: 80px;
+	}
+
+	.description{
+		font-size: 23px;
+	}
+
+	.pan{
+		margin:0;
+		width: 100%
+	}
+
+	.info{
+		padding:12px;
+	}
+
+	.lookCity{
+		width: 65%;
+	}
+}
 
 
 
